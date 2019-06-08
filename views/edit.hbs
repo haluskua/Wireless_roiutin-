@@ -1,0 +1,28 @@
+<form class="form" action="/profiles/edit/{{id}}" method="post">
+  <img class="img-circle" src="{{image}}" alt="{{name}}">
+
+  <div id="labelBox">
+    <label for="name" class="form-item">
+      <h3>Name:</h3>
+      <input class="writeBox" type="text" name="name" value="{{name}}">
+    </label>
+
+    <label for="Blog" class="form-item">
+      <h3>Blog Link:</h3>
+      <input class="writeBox" type="text" name="blog" value="{{blog}}">
+    </label>
+
+    <label for="bio" class="form-item">
+      <h3> Bio:</h3>
+      <div id="scrollable"><input class="writeBox" type="text" size="60" name="bio" value="{{bio}}">
+      <button onclick="selectText()">Select text</button>
+      </div>
+    </label>
+
+    <input class="writeBox" type="hidden" name="image" value="{{image}}">
+  </div>
+
+  <input class="submit" type="submit" name="" value="Submit">
+
+ 
+</form>
