@@ -18,9 +18,10 @@ router.get("/profiles", (req, res) => {
   res.render("home", viewData.data);
 });
 
+//fetches data in array/object specification via address{req.params.id}
 router.get("/profiles/:id", (req, res) => {
   const profile = findInArray(req.params.id);
-  res.render("profile", profile);
+  res.render("profile", profile); //renders particular route
 });
 //EDIT ROUTE
 router.get("/profiles/edit/:id", (req, res) => {
@@ -46,8 +47,6 @@ router.post("/profiles/edit/:id", (req, res) => {
   profileToUpdate.bio = update.bio;
 
 
-
-
   //Write the entire array back into the JSON file
   writeUpdateToFile(data, () => res.redirect("/profiles/" + req.params.id)); //Redirect goes to urls render to views
 });
@@ -66,7 +65,7 @@ router.post("/create", (req, res) => {
 });
 
 function findInArray(id) {
-  //locate the puppy we are going to update
+  //locate the data id (particular parameter) we are going to update
   return data.profiles.find(item => {
     return item.id == id;
   });

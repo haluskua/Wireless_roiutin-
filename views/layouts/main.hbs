@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
-  <title>EDA Book</title>
+  <title>Wireless data simulation</title>
   <link href="https://fonts.googleapis.com/css?family=Spirax" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap" rel="stylesheet">
@@ -12,24 +11,25 @@
 </head>
 
 <body>
-  <div class="app">
-    <div id="headerbar">
-      <img class="edaLogo" src="./images/edalogo.png" alt="eda logo"> 
-      <h1 class="title">E<i>da</i>book</h1>
+  <div id="minusOpacity">
+    <div class="app">
+      <div id="headerbar">
+        <div id="oneOf2row">
+          <img class="edaLogo" src="../images/home_routing.gif" alt="wireless image">
+        </div>
+        <div id="twoOf2row">
+          <h1 class="title">D<i>ata</i>Sim</h1>
+        </div>
       </div>
-    <div id="navbox">
-      <a class="nav" href="/profiles">Home</a>
-      <a class="nav" href="/create">Add Profile</a>
+      <div id="navbox">
+        <a class="nav" href="/profiles">Home</a>
+        <a class="nav" href="/create">Add Profile</a>
+      </div>
     </div>
-    {{{body}}}
+    <div><h2 id="seperator">Individual files from data.jason</h2></div>
+     {{{body}}}
   </div>
+ 
 </body>
-<script type="text/javascript">
-  function selectText() {
-    const input = document.getElementById('scrollable');  
-    input.focus();
-    input.setSelectionRange(2, 5);
-  }
-</script>
 
 </html>
