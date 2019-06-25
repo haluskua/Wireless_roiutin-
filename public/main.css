@@ -279,6 +279,12 @@ p{
   width: 100%;
   margin: 8px;
 }
+.bio_header {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
 #seperator {
   color: rgb(92, 99, 102);
   z-index: 9999;

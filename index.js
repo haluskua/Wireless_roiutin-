@@ -1,6 +1,6 @@
 const app = require('./server')
 
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 443
 
 app.listen(port, function () {
   // eslint-disable-next-line no-console
